@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <style>
+    *,
+    body {
+      background-color: black;
+    }
+  </style>
+  <script src="javascript.js"></script>
+  <title>Percentage Prediction app</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-secondary   d-flex">
+    <div class="container-fluid">
+      <a class="navbar-brand " style="color: aliceblue;">Student Percentage prediction - </a>
+
+    </div>
+  </nav>
+
+  <form action="/predict" method="POST">
+    <div style="background-color: black ; color :white; border-radius: 10px;">
+      <!-- code for english -->
+      <div class="container mt-5 style_box">
+        <div class="container p-2  " style="background-color: black ; color :white; border-radius: 10px;">
+          <span class="fs-2">English Periodic Marks (out of 10)  :</span>
+          <div class="input-group mb-3">
+            <input type="number" step="any" id="transit" max='10' min="0"  name='english_p' class="form-control " style="margin-right: 5px;"
+              placeholder="English marks">
+          </div>
+        </div>
+      </div>
+      <!-- code for hindi -->
+      <div class="container ">
+        <div class="container p-2 mb-2" style="background-color:black ; color :white; border-radius: 10px;">
+          <span class="fs-2">Hindi Periodic Marks (out of 10) :</span>
+          <div class="input-group mb-3">
+            <input type="number" id="transit" min="0" max='10' name='hindi_p' class="form-control " style="margin-right: 5px;"
+              placeholder="Hindi marks">
+          </div>
+        </div>
+      </div>
+      <!-- code for maths -->
+      <div class="container ">
+        <div class="container p-2 mb-2" style="background-color: black ; color :white; border-radius: 10px;">
+          <span class="fs-2">Maths Periodic Marks (out of 10) :</span>
+          <div class="input-group mb-3">
+            <input type="number" id="transit" min="0" max='10' name='maths_p' class="form-control " style="margin-right: 5px;"
+              placeholder="Maths marks">
+          </div>
+        </div>
+      </div>
+      <!-- code for science -->
+      <div class="container ">
+        <div class="container p-2 mb-2" style="background-color: black ; color :white; border-radius: 10px;">
+          <span class="fs-2">Science Periodic Marks (out of 10) :</span>
+          <div class="input-group mb-3">
+            <input type="number" id="transit" min="0" max='10' name='science_p' class="form-control " style="margin-right: 5px;"
+              placeholder="Science marks">
+          </div>
+        </div>
+      </div>
+      <!-- code for sst -->
+      <div class="container ">
+        <div class="container p-2 mb-2" style="background-color: black ; color :white; border-radius: 10px;">
+          <span class="fs-2">S.ST Periodic Marks (out of 10) :</span>
+          <div class="input-group mb-3">
+            <input type="number" id="transit" min="0" max='10' name='sst_p' class="form-control " style="margin-right: 5px;"
+              placeholder="sst marks">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container d-flex flex-row-reverse"><button type="submit" class="btn btn-primary">Predict!
+        !</button></div>
+
+  </form>
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <script src="javascript.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
