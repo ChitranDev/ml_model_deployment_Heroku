@@ -27,7 +27,7 @@ def predict():
     print(english_p)
 
     try:
-        subjects = [int(english_p),int(hindi_p),int(math_p),int(science_p),int(sst_p)]
+        subjects = [float(english_p),float(hindi_p),float(math_p),float(science_p),float(sst_p)]
         final_features = [np.array(subjects)]
         prediction = model.predict(final_features)
         final_result = np.round(prediction, 2)
